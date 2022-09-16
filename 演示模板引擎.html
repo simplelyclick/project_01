@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="D:\hqr\H5\js\template-web.js"></script>
+</head>
+
+<body>
+    <script type="text/html" ip="tpl-user">
+        <h1>{{name}} ---- {{age}}</h1>
+        {{test}}
+    </script>
+    <script>
+        var data = {
+            name: 'zs',
+            text: '< h3 > 测试原文输出 < /h3>'
+        }
+        var htmlStr = template('tpl-user', data)
+        comsole.log(htmlStr)
+    </script>
+</body>
+
+</html>
